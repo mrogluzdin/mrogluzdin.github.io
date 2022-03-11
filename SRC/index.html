@@ -12,12 +12,15 @@
     <title>Алексей Оглуздин_ веб разработка</title>
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/style.css">
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>  
 
 </head>
 
 <body> 
-  
+  <div id="p_prldr"><div class="contpre"><span class="svg_anm"></span><br>Подождите<br><small>идет загрузка</small></div></div>
+
   <header>
+     
       <nav>
           <div class="logo">Алексей Оглуздин</div>
           <div class="menu">
@@ -32,7 +35,8 @@
       </nav>
       </header>
       <main>
-  <div class="main"><div class="title__container">
+  <div class="main">
+     <div class="title__container">
       <h1>Привет <br>Я Алексей Оглуздин</h1>
       <h4>Фулл стек веб-разработчик</h4>
       <input type="submit"value="Обо мне">
@@ -141,6 +145,11 @@
         <input class="otp"type="submit"value="Отправить">
       
  </main>
-  <script src="simpleParallax.js"></script>    
+ <script type="text/javascript">$(window).on('load', function () {
+    var $preloader = $('#p_prldr'),
+        $svg_anm   = $preloader.find('.svg_anm');
+    $svg_anm.fadeOut();
+    $preloader.delay(500).fadeOut('slow');
+});</script>
 </body>
 </html>

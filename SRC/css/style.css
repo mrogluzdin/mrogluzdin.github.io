@@ -1,7 +1,37 @@
 body{
     font-family: Arial,sans-serif;
 }
-
+#p_prldr{
+position: fixed;
+left: 0;
+top: 0;
+right:0;
+bottom:0;
+background: #9A12B3;
+z-index: 30;}
+ 
+.contpre small{font-size:25px;}
+ 
+.contpre{
+width: 250px;
+height: 100px;
+position: absolute;
+left: 50%;top: 48%;
+margin-left:-125px;
+margin-top:-75px;
+color:#fff;
+font-size:40px;
+letter-spacing:-2px;
+text-align:center;
+line-height:35px;}
+ 
+#p_prldr .svg_anm {
+position: absolute;
+width: 41px;
+height: 41px;
+background: url(images/oval.svg) center center no-repeat;
+background-size:41px;    
+margin: -16px 0 0 -16px;}
 nav{
     width: 100%;
     height: 60px;
@@ -41,9 +71,9 @@ nav{
 .main{
     
     width: 100%;
-    height: calc(100%-60%);
+    height: calc(100% - 60%);
     background: url(../img/CQ4FQtP-uyE_cut-photo.ru.png);
-    background-size: auto;
+    background-size: 100%;
     background-repeat: no-repeat;
     
         
@@ -58,6 +88,7 @@ nav{
     -webkit-animation-delay: 0.1s;
     -o-animation-delay: 0.1s;
     animation-delay: 0.1s;
+    padding: 220px 700px 0px 0px;
 
 }
 .title__container h1{
@@ -92,7 +123,7 @@ nav{
     font-size: 40px;
     color: darkgoldenrod;
     font-weight: bold;
-    margin: 700px 300px 50px 580px;
+    margin: 800px 300px 50px 900px;
     
    
      
@@ -135,7 +166,7 @@ nav{
     font-size: 40px;
     color: darkgoldenrod;
     font-weight: bold;
-    margin: 70px 300px 50px 580px;
+    margin: 70px 300px 50px 800px;
 }
 .item_skill1{
    float: left;
